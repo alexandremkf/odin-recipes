@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+    color: #333;
+    padding: 2rem;
+    line-height: 1.6;
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+
+  ul li, a[href="../index.html"], .toggle-theme {
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Cabeçalho */
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #e63946;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    color: #457b9d;
+    margin-top: 2rem;
+  }
+  
+  a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #e63946;
+    text-decoration: underline;
+  }
+  
+  /* Lista de links da index */
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  ul li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  ul li:hover {
+    transform: scale(1.05);
+    background-color: #f1faee;
+  }
+  
+  /* Receita */
+  img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  p, ul, ol {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  ol, ul {
+    padding-left: 1.5rem;
+  }
+  
+  a[href="../index.html"] {
+    display: inline-block;
+    margin-bottom: 1rem;
+    background-color: #1d3557;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+  }
+  
+  a[href="../index.html"]:hover {
+    background-color: #457b9d;
+  }
+
+  /* 🌗 Dark Mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode h1 {
+    color: #f28482;
+  }
+  
+  body.dark-mode h2 {
+    color: #a8dadc;
+  }
+  
+  body.dark-mode a {
+    color: #f1faee;
+  }
+  
+  body.dark-mode a:hover {
+    color: #f28482;
+  }
+  
+  body.dark-mode ul li {
+    background-color: #2a2a2a;
+    border-color: #444;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.05);
+  }
+  
+  body.dark-mode ul li:hover {
+    background-color: #333;
+  }
+  
+  /* 🌘 Botão modo escuro */
+  .toggle-theme {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s ease;
+  }
+  
+  .toggle-theme:hover {
+    background-color: #457b9d;
+  }
+  
